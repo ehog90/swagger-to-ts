@@ -1,0 +1,6 @@
+export interface I{{{schema.key}}} 
+{ 
+    {{#each schema.schemaObject.properties}} 
+    {{#if this.readOnly}}readonly {{/if}}{{@key}}{{#if this.nullable}}?{{/if}}: 
+    {{/each}}
+}

@@ -1,0 +1,15 @@
+{
+  "tslint.configFile": "tslint.json",
+  "tslint.autoFixOnSave": false,
+  "html.format.endWithNewline": true,
+  "vsicons.presets.angular": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "typescriptHero.imports.organizeOnSave": true,
+  "typescriptHero.imports.organizeSortsByFirstSpecifier": true,
+  "prettier.printWidth": 120,
+  "prettier.ignorePath": "~/.prettierignore",
+  "[handlebars]": {
+    "editor.formatOnSave": false
+  },
+}
