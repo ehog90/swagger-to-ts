@@ -7,9 +7,7 @@
   "paths": {
     "/api/comment-dump/user/{userId}": {
       "get": {
-        "tags": [
-          "CommentDump"
-        ],
+        "tags": ["CommentDump"],
         "parameters": [
           {
             "name": "userId",
@@ -29,9 +27,7 @@
     },
     "/api/comment-dump/user/{userId}/all": {
       "get": {
-        "tags": [
-          "CommentDump"
-        ],
+        "tags": ["CommentDump"],
         "parameters": [
           {
             "name": "userId",
@@ -51,9 +47,7 @@
     },
     "/api/comment-dump/keywords": {
       "get": {
-        "tags": [
-          "CommentDump"
-        ],
+        "tags": ["CommentDump"],
         "parameters": [
           {
             "name": "keywords",
@@ -83,9 +77,7 @@
     },
     "/api/comments/{commentId}": {
       "get": {
-        "tags": [
-          "Comments"
-        ],
+        "tags": ["Comments"],
         "parameters": [
           {
             "name": "commentId",
@@ -131,9 +123,7 @@
     },
     "/api/comments/search/{where}": {
       "get": {
-        "tags": [
-          "Comments"
-        ],
+        "tags": ["Comments"],
         "parameters": [
           {
             "name": "where",
@@ -211,9 +201,7 @@
     },
     "/api/comments/last-by-user/{userId}": {
       "get": {
-        "tags": [
-          "Comments"
-        ],
+        "tags": ["Comments"],
         "parameters": [
           {
             "name": "userId",
@@ -259,9 +247,7 @@
     },
     "/api/comments/last-by-user-sse/{userId}": {
       "get": {
-        "tags": [
-          "Comments"
-        ],
+        "tags": ["Comments"],
         "parameters": [
           {
             "name": "userId",
@@ -281,9 +267,7 @@
     },
     "/api/comments/recent": {
       "get": {
-        "tags": [
-          "Comments"
-        ],
+        "tags": ["Comments"],
         "parameters": [
           {
             "name": "lastSec",
@@ -330,9 +314,7 @@
     },
     "/api/comments/search-sse/{where}": {
       "get": {
-        "tags": [
-          "Comments"
-        ],
+        "tags": ["Comments"],
         "parameters": [
           {
             "name": "where",
@@ -378,9 +360,7 @@
     },
     "/api/direct-disqus/forum-users/{forumId}": {
       "get": {
-        "tags": [
-          "DirectDisqus"
-        ],
+        "tags": ["DirectDisqus"],
         "parameters": [
           {
             "name": "forumId",
@@ -426,9 +406,7 @@
     },
     "/api/direct-disqus/ban-top-percentile-from-nl/{forumId}": {
       "get": {
-        "tags": [
-          "DirectDisqus"
-        ],
+        "tags": ["DirectDisqus"],
         "parameters": [
           {
             "name": "forumId",
@@ -483,9 +461,7 @@
     },
     "/api/essential/all": {
       "get": {
-        "tags": [
-          "EssentialData"
-        ],
+        "tags": ["EssentialData"],
         "responses": {
           "200": {
             "description": "Success",
@@ -512,9 +488,7 @@
     },
     "/api/firebase-registration": {
       "put": {
-        "tags": [
-          "Firebase"
-        ],
+        "tags": ["Firebase"],
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -548,9 +522,7 @@
     },
     "/api/firebase-registration/{regId}": {
       "put": {
-        "tags": [
-          "Firebase"
-        ],
+        "tags": ["Firebase"],
         "parameters": [
           {
             "name": "regId",
@@ -585,9 +557,7 @@
         }
       },
       "get": {
-        "tags": [
-          "Firebase"
-        ],
+        "tags": ["Firebase"],
         "parameters": [
           {
             "name": "regId",
@@ -622,9 +592,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Firebase"
-        ],
+        "tags": ["Firebase"],
         "parameters": [
           {
             "name": "regId",
@@ -644,9 +612,7 @@
     },
     "/api/watched-forums": {
       "get": {
-        "tags": [
-          "Forums"
-        ],
+        "tags": ["Forums"],
         "responses": {
           "200": {
             "description": "Success",
@@ -680,9 +646,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Forums"
-        ],
+        "tags": ["Forums"],
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -716,9 +680,7 @@
     },
     "/api/watched-forums/{disqusId}": {
       "get": {
-        "tags": [
-          "Forums"
-        ],
+        "tags": ["Forums"],
         "parameters": [
           {
             "name": "disqusId",
@@ -753,9 +715,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Forums"
-        ],
+        "tags": ["Forums"],
         "parameters": [
           {
             "name": "disqusId",
@@ -775,9 +735,7 @@
     },
     "/api/watched-forums/{disqusId}/activation": {
       "put": {
-        "tags": [
-          "Forums"
-        ],
+        "tags": ["Forums"],
         "parameters": [
           {
             "name": "disqusId",
@@ -795,9 +753,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Forums"
-        ],
+        "tags": ["Forums"],
         "parameters": [
           {
             "name": "disqusId",
@@ -817,9 +773,7 @@
     },
     "/api/heatmap/user/{userId}": {
       "get": {
-        "tags": [
-          "Heatmap"
-        ],
+        "tags": ["Heatmap"],
         "parameters": [
           {
             "name": "userId",
@@ -864,9 +818,7 @@
     },
     "/api/heatmap/label/{label}": {
       "get": {
-        "tags": [
-          "Heatmap"
-        ],
+        "tags": ["Heatmap"],
         "parameters": [
           {
             "name": "label",
@@ -911,9 +863,7 @@
     },
     "/api/heatmap/user/{userId}/comments/{epoch}": {
       "get": {
-        "tags": [
-          "Heatmap"
-        ],
+        "tags": ["Heatmap"],
         "parameters": [
           {
             "name": "userId",
@@ -974,9 +924,7 @@
     },
     "/api/heatmap/label/{label}/comments/{epoch}": {
       "get": {
-        "tags": [
-          "Heatmap"
-        ],
+        "tags": ["Heatmap"],
         "parameters": [
           {
             "name": "label",
@@ -1037,9 +985,7 @@
     },
     "/api/live-stream/active": {
       "get": {
-        "tags": [
-          "LiveStream"
-        ],
+        "tags": ["LiveStream"],
         "responses": {
           "200": {
             "description": "Success",
@@ -1066,9 +1012,7 @@
     },
     "/api/media/all/last-day": {
       "get": {
-        "tags": [
-          "Media"
-        ],
+        "tags": ["Media"],
         "responses": {
           "200": {
             "description": "Success",
@@ -1104,9 +1048,7 @@
     },
     "/api/media/v2/all/last-day": {
       "get": {
-        "tags": [
-          "Media"
-        ],
+        "tags": ["Media"],
         "parameters": [
           {
             "name": "limit",
@@ -1162,9 +1104,7 @@
     },
     "/api/media/v2/all/last-day-sse": {
       "get": {
-        "tags": [
-          "Media"
-        ],
+        "tags": ["Media"],
         "parameters": [
           {
             "name": "limit",
@@ -1194,9 +1134,7 @@
     },
     "/api/media/by-user/{userId}": {
       "get": {
-        "tags": [
-          "Media"
-        ],
+        "tags": ["Media"],
         "parameters": [
           {
             "name": "userId",
@@ -1242,9 +1180,7 @@
     },
     "/api/media/v2/by-user/{userId}": {
       "get": {
-        "tags": [
-          "Media"
-        ],
+        "tags": ["Media"],
         "parameters": [
           {
             "name": "userId",
@@ -1308,9 +1244,7 @@
     },
     "/api/media/v2/by-user-sse/{userId}": {
       "get": {
-        "tags": [
-          "Media"
-        ],
+        "tags": ["Media"],
         "parameters": [
           {
             "name": "userId",
@@ -1348,9 +1282,7 @@
     },
     "/api/media/{mediaName}/comments": {
       "get": {
-        "tags": [
-          "Media"
-        ],
+        "tags": ["Media"],
         "parameters": [
           {
             "name": "mediaName",
@@ -1396,9 +1328,7 @@
     },
     "/api/migration/migrate-media-users": {
       "get": {
-        "tags": [
-          "Migration"
-        ],
+        "tags": ["Migration"],
         "responses": {
           "200": {
             "description": "Success"
@@ -1408,9 +1338,7 @@
     },
     "/api/migration/backfill-comments": {
       "get": {
-        "tags": [
-          "Migration"
-        ],
+        "tags": ["Migration"],
         "parameters": [
           {
             "name": "hours",
@@ -1431,9 +1359,7 @@
     },
     "/api/options/comment-checking": {
       "get": {
-        "tags": [
-          "Options"
-        ],
+        "tags": ["Options"],
         "responses": {
           "200": {
             "description": "Success",
@@ -1458,9 +1384,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Options"
-        ],
+        "tags": ["Options"],
         "responses": {
           "200": {
             "description": "Success"
@@ -1470,9 +1394,7 @@
     },
     "/api/last-mentionings": {
       "get": {
-        "tags": [
-          "RestApi"
-        ],
+        "tags": ["RestApi"],
         "parameters": [
           {
             "name": "days",
@@ -1544,9 +1466,7 @@
     },
     "/api/last-mentionings/{userId}": {
       "get": {
-        "tags": [
-          "RestApi"
-        ],
+        "tags": ["RestApi"],
         "parameters": [
           {
             "name": "userId",
@@ -1592,9 +1512,7 @@
     },
     "/api/watched-user-comments/{userId}": {
       "get": {
-        "tags": [
-          "RestApi"
-        ],
+        "tags": ["RestApi"],
         "parameters": [
           {
             "name": "userId",
@@ -1659,9 +1577,7 @@
     },
     "/api/own-comments": {
       "get": {
-        "tags": [
-          "RestApi"
-        ],
+        "tags": ["RestApi"],
         "responses": {
           "200": {
             "description": "Success",
@@ -1698,9 +1614,7 @@
     },
     "/api/pastes": {
       "get": {
-        "tags": [
-          "RestApi"
-        ],
+        "tags": ["RestApi"],
         "parameters": [
           {
             "name": "limit",
@@ -1747,9 +1661,7 @@
     },
     "/api/saved-comments/watch-rule/{slug}": {
       "get": {
-        "tags": [
-          "RestApi"
-        ],
+        "tags": ["RestApi"],
         "parameters": [
           {
             "name": "slug",
@@ -1813,9 +1725,7 @@
     },
     "/api/recent-active-users": {
       "get": {
-        "tags": [
-          "RestApi"
-        ],
+        "tags": ["RestApi"],
         "responses": {
           "200": {
             "description": "Success",
@@ -1851,9 +1761,7 @@
     },
     "/api/forum-stats/overall": {
       "get": {
-        "tags": [
-          "Statistics"
-        ],
+        "tags": ["Statistics"],
         "parameters": [
           {
             "name": "hours",
@@ -1891,9 +1799,7 @@
     },
     "/api/forum-stats/by-slug/{slug}": {
       "get": {
-        "tags": [
-          "Statistics"
-        ],
+        "tags": ["Statistics"],
         "parameters": [
           {
             "name": "slug",
@@ -1939,9 +1845,7 @@
     },
     "/api/threads/search": {
       "get": {
-        "tags": [
-          "Threads"
-        ],
+        "tags": ["Threads"],
         "parameters": [
           {
             "name": "searchString",
@@ -1995,9 +1899,7 @@
     },
     "/api/threads": {
       "get": {
-        "tags": [
-          "Threads"
-        ],
+        "tags": ["Threads"],
         "parameters": [
           {
             "name": "hours",
@@ -2043,9 +1945,7 @@
     },
     "/api/threads/chronology/{threadId}": {
       "get": {
-        "tags": [
-          "Threads"
-        ],
+        "tags": ["Threads"],
         "parameters": [
           {
             "name": "threadId",
@@ -2082,9 +1982,7 @@
     },
     "/api/tryout/firebase/comment": {
       "get": {
-        "tags": [
-          "Tryout"
-        ],
+        "tags": ["Tryout"],
         "parameters": [
           {
             "name": "message",
@@ -2119,9 +2017,7 @@
     },
     "/api/users/{userId}": {
       "get": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "name": "userId",
@@ -2190,9 +2086,7 @@
     },
     "/api/users/{userId}/metrics": {
       "get": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "name": "userId",
@@ -2237,9 +2131,7 @@
     },
     "/api/users/{userId}/watch": {
       "put": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "name": "userId",
@@ -2276,9 +2168,7 @@
     },
     "/api/users/{userId}/unwatch": {
       "delete": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "name": "userId",
@@ -2315,9 +2205,7 @@
     },
     "/api/users/{userId}/block": {
       "put": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "name": "userId",
@@ -2354,9 +2242,7 @@
     },
     "/api/users/{userId}/unblock": {
       "delete": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "name": "userId",
@@ -2393,9 +2279,7 @@
     },
     "/api/users/{userId}/label": {
       "put": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "name": "userId",
@@ -2437,9 +2321,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "name": "userId",
@@ -2476,9 +2358,7 @@
     },
     "/api/users/{userId}/custom-name": {
       "put": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "name": "userId",
@@ -2520,9 +2400,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "name": "userId",
@@ -2559,9 +2437,7 @@
     },
     "/api/users/bulk-find-users": {
       "post": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -2621,9 +2497,7 @@
     },
     "/api/users/bulk-find-users-sse": {
       "get": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "name": "u",
@@ -2645,9 +2519,7 @@
     },
     "/api/users/search-users": {
       "get": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "name": "keyword",
@@ -2701,9 +2573,7 @@
     },
     "/api/users/search-users-cache": {
       "get": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "name": "keyword",
@@ -2757,9 +2627,7 @@
     },
     "/api/users/all-watched": {
       "get": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "responses": {
           "200": {
             "description": "Success",
@@ -2795,9 +2663,7 @@
     },
     "/api/users/labels/{label}": {
       "get": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "name": "label",
@@ -2874,9 +2740,7 @@
     },
     "/api/users/check-outdated": {
       "get": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "responses": {
           "200": {
             "description": "Success"
@@ -2886,9 +2750,7 @@
     },
     "/api/users/bulk-fetch-activities": {
       "post": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -2948,9 +2810,7 @@
     },
     "/api/watch-rules": {
       "get": {
-        "tags": [
-          "WatchRules"
-        ],
+        "tags": ["WatchRules"],
         "parameters": [
           {
             "name": "limit",
@@ -2995,9 +2855,7 @@
         }
       },
       "post": {
-        "tags": [
-          "WatchRules"
-        ],
+        "tags": ["WatchRules"],
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -3029,9 +2887,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "WatchRules"
-        ],
+        "tags": ["WatchRules"],
         "parameters": [
           {
             "name": "slug",
@@ -3247,11 +3103,7 @@
         "additionalProperties": false
       },
       "CommentsDataSource": {
-        "enum": [
-          "TTL",
-          "SELECTIVE_PERMANENT",
-          "PERMANENT"
-        ],
+        "enum": ["TTL", "SELECTIVE_PERMANENT", "PERMANENT"],
         "type": "string"
       },
       "DisqusUser": {
@@ -3306,10 +3158,7 @@
         "additionalProperties": false
       },
       "WatchedForumVisualData": {
-        "required": [
-          "backgroundColor",
-          "foregroundColor"
-        ],
+        "required": ["backgroundColor", "foregroundColor"],
         "type": "object",
         "properties": {
           "backgroundColor": {
@@ -3324,11 +3173,7 @@
         "additionalProperties": false
       },
       "WatchedForum": {
-        "required": [
-          "disqusID",
-          "name",
-          "visualData"
-        ],
+        "required": ["disqusID", "name", "visualData"],
         "type": "object",
         "properties": {
           "disqusID": {
@@ -3398,10 +3243,7 @@
         "additionalProperties": false
       },
       "FirebaseProperties": {
-        "required": [
-          "notifPastes",
-          "notifmentioning"
-        ],
+        "required": ["notifPastes", "notifmentioning"],
         "type": "object",
         "properties": {
           "notifmentioning": {
@@ -3414,10 +3256,7 @@
         "additionalProperties": false
       },
       "FirebaseRegistration": {
-        "required": [
-          "props",
-          "regId"
-        ],
+        "required": ["props", "regId"],
         "type": "object",
         "properties": {
           "regId": {
@@ -3547,6 +3386,11 @@
       },
       "LiveStreamStatistics": {
         "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/ForumAndCount"
+          }
+        ],
         "properties": {
           "allMessages": {
             "type": "integer",
@@ -3780,10 +3624,7 @@
         "additionalProperties": false
       },
       "StatisticsType": {
-        "enum": [
-          "OVERALL",
-          "WATCH_RULE"
-        ],
+        "enum": ["OVERALL", "WATCH_RULE"],
         "type": "string"
       },
       "StatisticsEntry": {
@@ -3979,10 +3820,7 @@
         "additionalProperties": false
       },
       "EntityStatus": {
-        "enum": [
-          "ALIVE",
-          "DELETED"
-        ],
+        "enum": ["ALIVE", "DELETED"],
         "type": "string"
       },
       "ExtendedUser": {

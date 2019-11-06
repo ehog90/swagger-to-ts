@@ -1,0 +1,6 @@
+export enum {{generateEnumName _enum.key}}
+{
+    {{#each _enum.schemaObject.enum}}
+    {{this}} = "{{this}}",
+    {{/each}}
+}

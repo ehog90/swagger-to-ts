@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/app.js",
   "scripts": {
-    "start": "npm run build && pushd lib && node app.js --file ../test-contracts/test-contract.json && popd;",
+    "start": "npm run build && pushd lib && node app.js --file ../test-contracts/test-contract.json --target ../test-contracts.ts && popd;",
     "build": "tsc -p .",
     "postbuild": "copyfiles -u 1 src/**/*.json src/**/*.hbs lib/"
   },

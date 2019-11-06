@@ -1,6 +1,10 @@
-export interface I{{{schema.key}}} 
-{ 
-    {{#each schema.schemaObject.properties}} 
-    {{#if this.readOnly}}readonly {{/if}}{{@key}}{{#if this.nullable}}?{{/if}}: 
+export interface {{generateInterfaceName _interface.key}}{{generateInheritance _interface.schemaObject}} {
+    {{#each _interface.schemaObject.properties}} 
+    {{#if this.format}}
+    /*
+    * Format: {{this.format}}
+    */
+    {{/if}}
+    {{#if this.readOnly}}readonly {{/if}}{{@key}}{{#if this.nullable}}?{{/if}}: {{extractTypeName this}};
     {{/each}}
 }
